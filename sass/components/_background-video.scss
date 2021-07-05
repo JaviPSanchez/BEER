@@ -1,0 +1,15 @@
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1; //PAra asegurarnos que realmente queda detras de todo
+  opacity: 0.15;
+  overflow: hidden;
+  &__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; // Cone sto ocupamos todo el elmento y ademas guardamos el aspect ratio, solo con el width y el height al 100% no funciona, hay que añadir esta propiedad!
+  }
+}

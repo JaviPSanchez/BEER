@@ -1,0 +1,53 @@
+.section-features {
+  background-color: $color-grey-light-v2;
+  padding: 5rem 0 30rem 0;
+}
+.section-photos {
+  padding: 0 0 60rem 0;
+}
+.section-why-gribeer {
+  background-color: $color-grey-light-v2;
+  padding: 5rem 0 60rem 0;
+}
+.section-alquiler {
+  padding: 0 0 60rem 0;
+  position: relative;
+}
+.section-otros {
+  padding: 0 0 60rem 0;
+}
+.section-slider {
+  padding: 0 0 20rem 0;
+  background-color: $color-grey-light-v2;
+}
+
+.section-book {
+  padding: 20rem 0;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($yellow, 0.8),
+    rgba($dark-yellow, 0.8)
+  );
+}
+
+.book {
+  background-image: linear-gradient(
+      105deg,
+      rgba($color-white, 0.9) 0%,
+      rgba($color-white, 0.9) 50%,
+      transparent 50%
+    ),
+    url(../OwnResources/img/booking.jpg);
+  background-size: 100%;
+  border-radius: $border-radious;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
+  &__form {
+    width: 50%;
+    padding: 6rem;
+  }
+}
+
+footer {
+  background-color: $dark-grey;
+  padding: 50px;
+}

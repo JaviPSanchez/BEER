@@ -1,0 +1,32 @@
+.header {
+  height: 100vh;
+  background-image: linear-gradient(
+      to right bottom,
+      hsla(41, 47%, 71%, 0.8),
+      hsla(42, 46%, 11%, 0.8)
+    ),
+    url(../OwnResources/img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);
+  background-attachment: fixed;
+}
+
+.logo {
+  height: 8rem;
+  width: auto;
+  margin: 4rem 3rem;
+  &:hover {
+    animation: bounce 1s ease-in;
+  }
+}
+
+.text-box {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 70%;
+}

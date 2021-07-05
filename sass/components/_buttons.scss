@@ -1,0 +1,99 @@
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s;
+  position: relative;
+  font-size: 1.5rem;
+}
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+.btn:active {
+  transform: translateY(-1px);
+}
+
+.btn-yellow {
+  background-color: $yellow;
+  color: $color-black;
+}
+.btn::after {
+  content: "";
+
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+.btn--white {
+  &:link,
+  &:visited {
+    background-color: $color-white;
+  }
+}
+.btn--white::after {
+  background-color: $color-white;
+  color: $dark-grey;
+
+  &::after {
+    background-color: $color-white;
+  }
+}
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+.btn-animated {
+  animation: moveInBottom 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
+}
+.btn-scroll {
+  position: absolute;
+  padding-top: 6rem;
+  left: 50%;
+  display: inline-block;
+  bottom: 2rem;
+  font: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  color: $yellow;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.btn-scroll-span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid $yellow;
+  border-bottom: 1px solid $yellow;
+  transform: rotate(-45deg);
+  animation: scroll 2s infinite;
+}
+.btn-ghost:link,
+.btn-ghost:visited {
+  border: 1px solid $yellow;
+  color: $yellow;
+}
+.btn-ghost:hover,
+.btn-ghost:active {
+  background-color: $yellow;
+  border: 1px solid $yellow;
+  color: $color-white;
+}

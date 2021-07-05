@@ -1,0 +1,27 @@
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+}
+.main-nav {
+  float: right;
+  list-style: none;
+  margin: 7rem 4rem;
+}
+.main-nav li {
+  display: inline-block;
+  margin-left: 4rem;
+}
+.main-nav li a:link,
+.main-nav li a:visited {
+  padding: 0.8rem 0;
+  color: $yellow;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  border-bottom: 0.5rem solid transparent;
+  transition: border-bottom 0.2s;
+}
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 0.2rem solid $yellow;
+}
